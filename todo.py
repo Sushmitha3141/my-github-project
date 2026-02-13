@@ -6,6 +6,6 @@ def add_task(task):
 def view_tasks():
     for i, task in enumerate(tasks, 1):
         print(i, task)
-
-add_task("Sample Task")
-view_tasks()
+def delete_task(index):
+    if 0 <= index < len(tasks):
+        tasks.pop(index)
