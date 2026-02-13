@@ -9,3 +9,7 @@ def view_tasks():
 
 add_task("Sample Task")
 view_tasks()
+
+def mark_complete(index):
+    if 0 <= index < len(tasks):
+        tasks[index] = tasks[index] + " (Done)"
