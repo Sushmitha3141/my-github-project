@@ -1,4 +1,4 @@
-tasks = []
+tasks = None
 
 def add_task(task):
     tasks.append(task)
